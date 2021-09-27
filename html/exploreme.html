@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  
+
+
+
+
+
+    
+ <style> 
+
+
+
+
+
+html {
+  background: Turquoise;
+}
+
+.spider {
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 80%;
+
+  
+
+  /* 4. Animatie */
+  animation: swing 2s infinite;
+  transform-origin: top;
+
+  /* Bonus */
+  transition: 0.8s ease-in-out;
+}
+
+/* {% comment %} iphone X  {% endcomment %} */
+          @media (max-width:375px){
+           .spider {
+              left: 55%;
+              top: -45px;
+            }
+          }
+
+          /* {% comment %} iphone 6 7 8 plus  {% endcomment %} */
+          @media (max-width:414px){
+           .spider {
+              left: 55%;
+              top: -45px;
+            }
+          }
+
+.spider .spiderweb {
+  width: 2px;
+  height: 200px;
+  margin-left: 49px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.spider .body {
+  width: 100px;
+  height: 80px;
+  background: #222;
+  position: relative;
+  border-radius: 50%;
+}
+
+.spider .body .eye {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 20px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.spider .body .eye.left {
+  left: 20px;
+}
+
+.spider .body .eye.right {
+  right: 20px;
+}
+
+.spider .body .eye:after {
+  background: #222;
+  width: 7px;
+  height: 7px;
+  content: "";
+  display: block;
+  margin: 55%;
+  border-radius: 50%;
+
+  /* 3. Animatie */
+  animation: look 4s infinite;
+}
+
+.spider .legs .leg {
+  width: 80px;
+  height: 40px;
+  margin-top: -20px;
+  border: 5px solid transparent;
+  border-top-color: #333;
+  border-radius: 40px 40px 0 0;
+}
+
+.spider .legs {
+  position: absolute;
+  bottom: -10%;
+  z-index: -1;
+}
+
+.spider .legs.left {
+  left: -70%;
+}
+.spider .legs.right {
+  right: -60%;
+}
+
+.legs.left .leg:nth-child(1) {
+  transform: rotate(10deg);
+  margin-left: 10px;
+}
+.legs.right .leg:nth-child(1) {
+  transform: rotate(-10deg);
+  margin-left: -10px;
+}
+
+.legs.left .leg:nth-child(2) {
+  transform: rotate(-20deg);
+  margin-left: 20px;
+}
+.legs.right .leg:nth-child(2) {
+  transform: rotate(20deg);
+  margin-left: -20px;
+}
+
+.legs.left .leg:nth-child(3) {
+  transform: rotate(-50deg);
+  margin-left: 30px;
+}
+.legs.right .leg:nth-child(3) {
+  transform: rotate(50deg);
+  margin-left: -30px;
+}
+
+/* 1. Animatie */
+@keyframes look {
+  0%,
+  40%,
+  100% {
+    transform: translateX(0);
+  }
+
+  45%,
+  95% {
+    transform: translateX(-110%);
+  }
+}
+
+/* 3. Animatie */
+@keyframes swing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+
+
+  body {
+    background-color: Turquoise;     ;
+    
+  }
+
+  p {
+    margin-top: 100px;
+    margin-left: 175px;
+    font-size: 80px;
+    font-family: Papyrus ;
+  }
+
+         /* {% comment %} iphone X  {% endcomment %} */
+          @media (max-width:375px){
+         p{        margin-top: 152px;
+                 margin-left: 30px;
+                 font-size: 40px;
+        }
+      }
+
+       /* {% comment %} iphone 6 7 8 plus {% endcomment %} */
+          @media (max-width:414px){
+         p{        margin-top: 182px;
+                 margin-left: 30px;
+                 font-size: 40px;
+        }
+      }
+
+
+
+
+
+  .std{
+    
+    margin-top: -30px;
+    margin-left: 175px;
+    font-size: 25px;
+    font-family: Lucida Handwriting ;
+    
+  }
+
+ /* {% comment %} iphone X  {% endcomment %} */
+          @media (max-width:375px){
+        .std{  
+             margin-top: -10px;
+             margin-left: 35px;
+             font-size: 20px;
+             font-family: Lucida Handwriting ;
+    
+            }
+          }
+
+          /* {% comment %} iphone 6 7 8 plus {% endcomment %} */
+          @media (max-width:414px){
+        .std{  
+             margin-top: 1px;
+             margin-left: 42px;
+             font-size: 20px;
+             font-family: Lucida Handwriting ;
+    
+            }
+          }
+
+
+
+  
+
+  .stdd{
+    margin-top:-40px;
+    margin-left: 880px;
+  }
+
+.fa {
+  padding: 20px;
+  font-size: 35px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  margin-left: 250px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+#navv{
+margin-top:30px;
+}
+
+/* {% comment %} iphone X  {% endcomment %} */
+          @media (max-width:375px){
+        #navv{
+          margin-top:-15px;
+        }
+          } 
+
+
+
+
+
+#ntwr {
+    
+    margin: -12px;
+    padding: 7px;
+    padding-left: 294px;
+    padding-right: 219px;
+}
+/* {% comment %} iphone X  {% endcomment %} */
+          @media (max-width:414px){
+        #ntwr{
+            margin: -5px;
+            padding: 18px;
+            padding-left: 46px;
+            padding-right: 92px;
+
+              }
+          }
+
+/* {% comment %} iphone X  {% endcomment %} */
+          @media (max-width:414px){
+        .navbar-brand {
+          margin-right: -4rem
+          }
+        }
+
+
+</style>
+
+
+
+    <title>Md Ahtisham Portfolio</title>
+
+
+      
+
+
+  </head>
+  <body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+
+
+    <a class="navbar-brand" href="/index.html">Md Ahtisham</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/html/exploreme.html">Home</a>
+        <a class="nav-link" href="/html/skill.html">Skill</a>
+        <a class="nav-link" href="/html/about.html">About</a>
+        <a class="nav-link" href="/html/contact.html">Contact</a>
+        
+        
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<div> <p>Hello!! <br> I am Md Ahtisham 
+ </p></div>
+<div class="std">I'm a Software Engineer</div>
+
+
+
+
+
+
+
+ <div class="spider">
+  <div class="spiderweb"></div>
+  <div class="body">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+  </div>
+  <div class="legs left">
+    <div class="leg"></div>
+    <div class="leg"></div>
+    <div class="leg"></div>
+  </div>
+  <div class="legs right">
+    <div class="leg"></div>
+    <div class="leg"></div>
+    <div class="leg"></div>
+  </div>
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+
+<nav class="navbar navbar-dark bg-dark" id="navv">
+<div class="container" id="ntwr">
+    <a class="navbar-brand" href="https://www.linkedin.com/in/md-ahtisham">
+      <img src="/img/Linkedin.png" alt="" width="30" height="30">
+    </a>
+  
+    <a class="navbar-brand" href="https://www.hackerrank.com/md__ahtisham">
+      <img src="/img/hackerrank.png" alt="" width="30" height="30">
+    </a>
+
+    <a class="navbar-brand" href="https://github.com/mdahtisham">
+      <img src="/img/Github.png" alt="" width="30" height="30">
+    </a>
+
+    <a class="navbar-brand" href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+      <img src="/img/gmail.png" alt="" width="30" height="30">
+    </a>
+
+    <a class="navbar-brand" href="https://twitter.com/Md__Ahtisham?s=08">
+      <img src="/img/twitter.png" alt="" width="30" height="30">
+    </a>
+
+    <!-- <a class="navbar-brand" href="https://www.instagram.com/md__ahtisham/">
+      <img src="/img/instagram.png" alt="" width="30" height="30">
+    </a>
+
+    <a class="navbar-brand" href="https://www.facebook.com/mdahtisham9889">
+      <img src="/img/facebook.png" alt="" width="30" height="30">
+    </a> -->
+  </div>
+
+  </nav>
+
+
+    
+
+
+  </body>
+  </html>
